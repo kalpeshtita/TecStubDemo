@@ -1,0 +1,844 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		180054FC25A09D98000B2FE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180054FB25A09D98000B2FE2 /* AppDelegate.swift */; };
+		1800550025A09D98000B2FE2 /* DogListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180054FF25A09D98000B2FE2 /* DogListViewController.swift */; };
+		1800550325A09D98000B2FE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1800550125A09D98000B2FE2 /* Main.storyboard */; };
+		1800550625A09D98000B2FE2 /* TecStubDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1800550425A09D98000B2FE2 /* TecStubDemo.xcdatamodeld */; };
+		1800550825A09D9A000B2FE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1800550725A09D9A000B2FE2 /* Assets.xcassets */; };
+		1800550B25A09D9A000B2FE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1800550925A09D9A000B2FE2 /* LaunchScreen.storyboard */; };
+		1800551625A09D9A000B2FE2 /* TecStubDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800551525A09D9A000B2FE2 /* TecStubDemoTests.swift */; };
+		1800552125A09D9A000B2FE2 /* TecStubDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800552025A09D9A000B2FE2 /* TecStubDemoUITests.swift */; };
+		18AC87C125A18D0D007D8C52 /* DogListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AC87C025A18D0D007D8C52 /* DogListRouter.swift */; };
+		18AC87C325A18D63007D8C52 /* TecStubDemoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AC87C225A18D63007D8C52 /* TecStubDemoProtocol.swift */; };
+		18AC87C525A18EA9007D8C52 /* DogListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AC87C425A18EA9007D8C52 /* DogListPresenter.swift */; };
+		18AC87C725A19159007D8C52 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AC87C625A19159007D8C52 /* Dog.swift */; };
+		18AC87C925A1942B007D8C52 /* DogListIntrector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AC87C825A1942B007D8C52 /* DogListIntrector.swift */; };
+		18AC87CB25A1FD49007D8C52 /* APIRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AC87CA25A1FD49007D8C52 /* APIRequestHelper.swift */; };
+		3C579B928F127901824FCD0D /* Pods_TecStubDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7015A2D0DA4AEA430423DD4 /* Pods_TecStubDemo.framework */; };
+		999F5AA0C057FB46DB81E940 /* Pods_TecStubDemo_TecStubDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF4A46FE21DE8492F7D06399 /* Pods_TecStubDemo_TecStubDemoUITests.framework */; };
+		F5803578AB31F8BB020EDBF9 /* Pods_TecStubDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D41581AF4F127CB4950CFBB /* Pods_TecStubDemoTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1800551225A09D9A000B2FE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180054F025A09D98000B2FE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 180054F725A09D98000B2FE2;
+			remoteInfo = TecStubDemo;
+		};
+		1800551D25A09D9A000B2FE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180054F025A09D98000B2FE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 180054F725A09D98000B2FE2;
+			remoteInfo = TecStubDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		180054F825A09D98000B2FE2 /* TecStubDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TecStubDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		180054FB25A09D98000B2FE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		180054FF25A09D98000B2FE2 /* DogListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListViewController.swift; sourceTree = "<group>"; };
+		1800550225A09D98000B2FE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1800550525A09D98000B2FE2 /* TecStubDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TecStubDemo.xcdatamodel; sourceTree = "<group>"; };
+		1800550725A09D9A000B2FE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1800550A25A09D9A000B2FE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1800550C25A09D9A000B2FE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1800551125A09D9A000B2FE2 /* TecStubDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TecStubDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1800551525A09D9A000B2FE2 /* TecStubDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TecStubDemoTests.swift; sourceTree = "<group>"; };
+		1800551725A09D9A000B2FE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1800551C25A09D9A000B2FE2 /* TecStubDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TecStubDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1800552025A09D9A000B2FE2 /* TecStubDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TecStubDemoUITests.swift; sourceTree = "<group>"; };
+		1800552225A09D9A000B2FE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18AC87C025A18D0D007D8C52 /* DogListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListRouter.swift; sourceTree = "<group>"; };
+		18AC87C225A18D63007D8C52 /* TecStubDemoProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TecStubDemoProtocol.swift; sourceTree = "<group>"; };
+		18AC87C425A18EA9007D8C52 /* DogListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListPresenter.swift; sourceTree = "<group>"; };
+		18AC87C625A19159007D8C52 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		18AC87C825A1942B007D8C52 /* DogListIntrector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListIntrector.swift; sourceTree = "<group>"; };
+		18AC87CA25A1FD49007D8C52 /* APIRequestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequestHelper.swift; sourceTree = "<group>"; };
+		38BD4DC5982B14DA9E06C0E3 /* Pods-TecStubDemo-TecStubDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TecStubDemo-TecStubDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-TecStubDemo-TecStubDemoUITests/Pods-TecStubDemo-TecStubDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7497E3A88D1D9C25D64CE1FE /* Pods-TecStubDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TecStubDemo.release.xcconfig"; path = "Target Support Files/Pods-TecStubDemo/Pods-TecStubDemo.release.xcconfig"; sourceTree = "<group>"; };
+		7D41581AF4F127CB4950CFBB /* Pods_TecStubDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TecStubDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		980DC0A78C407C29A7454675 /* Pods-TecStubDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TecStubDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-TecStubDemoTests/Pods-TecStubDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AF4A46FE21DE8492F7D06399 /* Pods_TecStubDemo_TecStubDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TecStubDemo_TecStubDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7DB11112C16E2CE98406C5F /* Pods-TecStubDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TecStubDemoTests.release.xcconfig"; path = "Target Support Files/Pods-TecStubDemoTests/Pods-TecStubDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		C40471647B83E2C6D2A4C032 /* Pods-TecStubDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TecStubDemo.debug.xcconfig"; path = "Target Support Files/Pods-TecStubDemo/Pods-TecStubDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		D7015A2D0DA4AEA430423DD4 /* Pods_TecStubDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TecStubDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E911ED62AA7F5B8B4219141D /* Pods-TecStubDemo-TecStubDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TecStubDemo-TecStubDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-TecStubDemo-TecStubDemoUITests/Pods-TecStubDemo-TecStubDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		180054F525A09D98000B2FE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C579B928F127901824FCD0D /* Pods_TecStubDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1800550E25A09D9A000B2FE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5803578AB31F8BB020EDBF9 /* Pods_TecStubDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1800551925A09D9A000B2FE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				999F5AA0C057FB46DB81E940 /* Pods_TecStubDemo_TecStubDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		180054EF25A09D98000B2FE2 = {
+			isa = PBXGroup;
+			children = (
+				180054FA25A09D98000B2FE2 /* TecStubDemo */,
+				1800551425A09D9A000B2FE2 /* TecStubDemoTests */,
+				1800551F25A09D9A000B2FE2 /* TecStubDemoUITests */,
+				180054F925A09D98000B2FE2 /* Products */,
+				8F1F7B78536286FBBFABB888 /* Pods */,
+				3FEDEF5095B9387C0B5963D7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		180054F925A09D98000B2FE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				180054F825A09D98000B2FE2 /* TecStubDemo.app */,
+				1800551125A09D9A000B2FE2 /* TecStubDemoTests.xctest */,
+				1800551C25A09D9A000B2FE2 /* TecStubDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		180054FA25A09D98000B2FE2 /* TecStubDemo */ = {
+			isa = PBXGroup;
+			children = (
+				18AC87BD25A189F0007D8C52 /* app-settings */,
+				18AC87BC25A189D3007D8C52 /* app-ui */,
+				18AC87BB25A189CA007D8C52 /* protocol */,
+				18AC87BA25A189AA007D8C52 /* router */,
+				18AC87B925A189A1007D8C52 /* entity */,
+				18AC87B825A18986007D8C52 /* presenter */,
+				18AC87B725A1892B007D8C52 /* interector */,
+				18AC87B625A18910007D8C52 /* view */,
+				1800550725A09D9A000B2FE2 /* Assets.xcassets */,
+				1800550C25A09D9A000B2FE2 /* Info.plist */,
+				1800550425A09D98000B2FE2 /* TecStubDemo.xcdatamodeld */,
+			);
+			path = TecStubDemo;
+			sourceTree = "<group>";
+		};
+		1800551425A09D9A000B2FE2 /* TecStubDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				1800551525A09D9A000B2FE2 /* TecStubDemoTests.swift */,
+				1800551725A09D9A000B2FE2 /* Info.plist */,
+			);
+			path = TecStubDemoTests;
+			sourceTree = "<group>";
+		};
+		1800551F25A09D9A000B2FE2 /* TecStubDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1800552025A09D9A000B2FE2 /* TecStubDemoUITests.swift */,
+				1800552225A09D9A000B2FE2 /* Info.plist */,
+			);
+			path = TecStubDemoUITests;
+			sourceTree = "<group>";
+		};
+		18AC87B625A18910007D8C52 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				180054FF25A09D98000B2FE2 /* DogListViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		18AC87B725A1892B007D8C52 /* interector */ = {
+			isa = PBXGroup;
+			children = (
+				18AC87CA25A1FD49007D8C52 /* APIRequestHelper.swift */,
+				18AC87C825A1942B007D8C52 /* DogListIntrector.swift */,
+			);
+			path = interector;
+			sourceTree = "<group>";
+		};
+		18AC87B825A18986007D8C52 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				18AC87C425A18EA9007D8C52 /* DogListPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		18AC87B925A189A1007D8C52 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				18AC87C625A19159007D8C52 /* Dog.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
+		18AC87BA25A189AA007D8C52 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				18AC87C025A18D0D007D8C52 /* DogListRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		18AC87BB25A189CA007D8C52 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				18AC87C225A18D63007D8C52 /* TecStubDemoProtocol.swift */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		18AC87BC25A189D3007D8C52 /* app-ui */ = {
+			isa = PBXGroup;
+			children = (
+				1800550125A09D98000B2FE2 /* Main.storyboard */,
+				1800550925A09D9A000B2FE2 /* LaunchScreen.storyboard */,
+			);
+			path = "app-ui";
+			sourceTree = "<group>";
+		};
+		18AC87BD25A189F0007D8C52 /* app-settings */ = {
+			isa = PBXGroup;
+			children = (
+				180054FB25A09D98000B2FE2 /* AppDelegate.swift */,
+			);
+			path = "app-settings";
+			sourceTree = "<group>";
+		};
+		3FEDEF5095B9387C0B5963D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D7015A2D0DA4AEA430423DD4 /* Pods_TecStubDemo.framework */,
+				AF4A46FE21DE8492F7D06399 /* Pods_TecStubDemo_TecStubDemoUITests.framework */,
+				7D41581AF4F127CB4950CFBB /* Pods_TecStubDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F1F7B78536286FBBFABB888 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C40471647B83E2C6D2A4C032 /* Pods-TecStubDemo.debug.xcconfig */,
+				7497E3A88D1D9C25D64CE1FE /* Pods-TecStubDemo.release.xcconfig */,
+				E911ED62AA7F5B8B4219141D /* Pods-TecStubDemo-TecStubDemoUITests.debug.xcconfig */,
+				38BD4DC5982B14DA9E06C0E3 /* Pods-TecStubDemo-TecStubDemoUITests.release.xcconfig */,
+				980DC0A78C407C29A7454675 /* Pods-TecStubDemoTests.debug.xcconfig */,
+				B7DB11112C16E2CE98406C5F /* Pods-TecStubDemoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		180054F725A09D98000B2FE2 /* TecStubDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1800552525A09D9A000B2FE2 /* Build configuration list for PBXNativeTarget "TecStubDemo" */;
+			buildPhases = (
+				EC76D30949175D61C04C8D21 /* [CP] Check Pods Manifest.lock */,
+				180054F425A09D98000B2FE2 /* Sources */,
+				180054F525A09D98000B2FE2 /* Frameworks */,
+				180054F625A09D98000B2FE2 /* Resources */,
+				2A8CF6CBE6B1DF221031E9EC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TecStubDemo;
+			productName = TecStubDemo;
+			productReference = 180054F825A09D98000B2FE2 /* TecStubDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1800551025A09D9A000B2FE2 /* TecStubDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1800552825A09D9A000B2FE2 /* Build configuration list for PBXNativeTarget "TecStubDemoTests" */;
+			buildPhases = (
+				09AD5CEA511A7ECDCE1AB291 /* [CP] Check Pods Manifest.lock */,
+				1800550D25A09D9A000B2FE2 /* Sources */,
+				1800550E25A09D9A000B2FE2 /* Frameworks */,
+				1800550F25A09D9A000B2FE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1800551325A09D9A000B2FE2 /* PBXTargetDependency */,
+			);
+			name = TecStubDemoTests;
+			productName = TecStubDemoTests;
+			productReference = 1800551125A09D9A000B2FE2 /* TecStubDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1800551B25A09D9A000B2FE2 /* TecStubDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1800552B25A09D9A000B2FE2 /* Build configuration list for PBXNativeTarget "TecStubDemoUITests" */;
+			buildPhases = (
+				A3FC9480F66F3ACADF808DBC /* [CP] Check Pods Manifest.lock */,
+				1800551825A09D9A000B2FE2 /* Sources */,
+				1800551925A09D9A000B2FE2 /* Frameworks */,
+				1800551A25A09D9A000B2FE2 /* Resources */,
+				5746BDD578F57778B49D03AF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1800551E25A09D9A000B2FE2 /* PBXTargetDependency */,
+			);
+			name = TecStubDemoUITests;
+			productName = TecStubDemoUITests;
+			productReference = 1800551C25A09D9A000B2FE2 /* TecStubDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		180054F025A09D98000B2FE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1170;
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = Tita;
+				TargetAttributes = {
+					180054F725A09D98000B2FE2 = {
+						CreatedOnToolsVersion = 11.7;
+					};
+					1800551025A09D9A000B2FE2 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 180054F725A09D98000B2FE2;
+					};
+					1800551B25A09D9A000B2FE2 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 180054F725A09D98000B2FE2;
+					};
+				};
+			};
+			buildConfigurationList = 180054F325A09D98000B2FE2 /* Build configuration list for PBXProject "TecStubDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 180054EF25A09D98000B2FE2;
+			productRefGroup = 180054F925A09D98000B2FE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				180054F725A09D98000B2FE2 /* TecStubDemo */,
+				1800551025A09D9A000B2FE2 /* TecStubDemoTests */,
+				1800551B25A09D9A000B2FE2 /* TecStubDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		180054F625A09D98000B2FE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1800550B25A09D9A000B2FE2 /* LaunchScreen.storyboard in Resources */,
+				1800550825A09D9A000B2FE2 /* Assets.xcassets in Resources */,
+				1800550325A09D98000B2FE2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1800550F25A09D9A000B2FE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1800551A25A09D9A000B2FE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09AD5CEA511A7ECDCE1AB291 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TecStubDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A8CF6CBE6B1DF221031E9EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TecStubDemo/Pods-TecStubDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TecStubDemo/Pods-TecStubDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TecStubDemo/Pods-TecStubDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5746BDD578F57778B49D03AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TecStubDemo-TecStubDemoUITests/Pods-TecStubDemo-TecStubDemoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TecStubDemo-TecStubDemoUITests/Pods-TecStubDemo-TecStubDemoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TecStubDemo-TecStubDemoUITests/Pods-TecStubDemo-TecStubDemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3FC9480F66F3ACADF808DBC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TecStubDemo-TecStubDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC76D30949175D61C04C8D21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TecStubDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		180054F425A09D98000B2FE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1800550025A09D98000B2FE2 /* DogListViewController.swift in Sources */,
+				18AC87C925A1942B007D8C52 /* DogListIntrector.swift in Sources */,
+				18AC87C725A19159007D8C52 /* Dog.swift in Sources */,
+				18AC87C125A18D0D007D8C52 /* DogListRouter.swift in Sources */,
+				180054FC25A09D98000B2FE2 /* AppDelegate.swift in Sources */,
+				18AC87CB25A1FD49007D8C52 /* APIRequestHelper.swift in Sources */,
+				18AC87C525A18EA9007D8C52 /* DogListPresenter.swift in Sources */,
+				1800550625A09D98000B2FE2 /* TecStubDemo.xcdatamodeld in Sources */,
+				18AC87C325A18D63007D8C52 /* TecStubDemoProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1800550D25A09D9A000B2FE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1800551625A09D9A000B2FE2 /* TecStubDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1800551825A09D9A000B2FE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1800552125A09D9A000B2FE2 /* TecStubDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1800551325A09D9A000B2FE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 180054F725A09D98000B2FE2 /* TecStubDemo */;
+			targetProxy = 1800551225A09D9A000B2FE2 /* PBXContainerItemProxy */;
+		};
+		1800551E25A09D9A000B2FE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 180054F725A09D98000B2FE2 /* TecStubDemo */;
+			targetProxy = 1800551D25A09D9A000B2FE2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1800550125A09D98000B2FE2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1800550225A09D98000B2FE2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1800550925A09D9A000B2FE2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1800550A25A09D9A000B2FE2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1800552325A09D9A000B2FE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1800552425A09D9A000B2FE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1800552625A09D9A000B2FE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C40471647B83E2C6D2A4C032 /* Pods-TecStubDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TecStubDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tita.TecStubDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1800552725A09D9A000B2FE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7497E3A88D1D9C25D64CE1FE /* Pods-TecStubDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TecStubDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tita.TecStubDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1800552925A09D9A000B2FE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 980DC0A78C407C29A7454675 /* Pods-TecStubDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TecStubDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tita.TecStubDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TecStubDemo.app/TecStubDemo";
+			};
+			name = Debug;
+		};
+		1800552A25A09D9A000B2FE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7DB11112C16E2CE98406C5F /* Pods-TecStubDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TecStubDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tita.TecStubDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TecStubDemo.app/TecStubDemo";
+			};
+			name = Release;
+		};
+		1800552C25A09D9A000B2FE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E911ED62AA7F5B8B4219141D /* Pods-TecStubDemo-TecStubDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TecStubDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tita.TecStubDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TecStubDemo;
+			};
+			name = Debug;
+		};
+		1800552D25A09D9A000B2FE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38BD4DC5982B14DA9E06C0E3 /* Pods-TecStubDemo-TecStubDemoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TecStubDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tita.TecStubDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TecStubDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		180054F325A09D98000B2FE2 /* Build configuration list for PBXProject "TecStubDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1800552325A09D9A000B2FE2 /* Debug */,
+				1800552425A09D9A000B2FE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1800552525A09D9A000B2FE2 /* Build configuration list for PBXNativeTarget "TecStubDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1800552625A09D9A000B2FE2 /* Debug */,
+				1800552725A09D9A000B2FE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1800552825A09D9A000B2FE2 /* Build configuration list for PBXNativeTarget "TecStubDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1800552925A09D9A000B2FE2 /* Debug */,
+				1800552A25A09D9A000B2FE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1800552B25A09D9A000B2FE2 /* Build configuration list for PBXNativeTarget "TecStubDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1800552C25A09D9A000B2FE2 /* Debug */,
+				1800552D25A09D9A000B2FE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1800550425A09D98000B2FE2 /* TecStubDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1800550525A09D98000B2FE2 /* TecStubDemo.xcdatamodel */,
+			);
+			currentVersion = 1800550525A09D98000B2FE2 /* TecStubDemo.xcdatamodel */;
+			path = TecStubDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 180054F025A09D98000B2FE2 /* Project object */;
+}
