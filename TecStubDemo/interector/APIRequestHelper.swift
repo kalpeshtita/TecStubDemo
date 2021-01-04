@@ -1,10 +1,10 @@
-//
-//  APIRequestManager.swift
-//  WeatherApp
-//
-//  Created by Kalpesh on 03/01/21.
-//  Copyright © 2020 Kalpesh. All rights reserved.
-//
+////
+////  APIRequestManager.swift
+////  WeatherApp
+////
+////  Created by Kalpesh on 03/01/21.
+////  Copyright © 2020 Kalpesh. All rights reserved.
+////
 
 
 import Alamofire
@@ -25,17 +25,10 @@ class APIRequest {
     }()
         
     class func getServerUrl() -> String {
-        let serverURL = Environment().configuration(PlistKey.ServerURL)
-        let httpProtocol = Environment().configuration(PlistKey.ConnectionProtocol)
-        let apiVersion = Environment().configuration(PlistKey.APIVersion)
-       
-        return httpProtocol + serverURL + apiVersion
+        
+        return "https://api.thedogapi.com/v1/"
     }
     
-    class func getWeatherApiKey() -> String {
-       return Environment().configuration(PlistKey.APIKey)
-        
-    }
 }
 
 extension APIRequest {
@@ -52,14 +45,14 @@ extension APIRequest {
             APIRequest.sessionManager.request(endpointRequest)
                 .validate(statusCode: 200..<299)
                 .responseJSON { (response) in
-//                    self.processResponse(response, onSuccess: onSuccess, onError: onError)
+                    self.processResponse(response, onSuccess: onSuccess, onError: onError)
             }
         }
     
     public static func urlRequest(from request: APIEndpoint) -> URLRequest? {
         let endpoint = request.endpoint()
         let urlParameters = request.getURLPerameters()
-        guard let endpointUrl = URL(string: "\(getServerUrl())\(endpoint)?appid=\(getWeatherApiKey())\(urlParameters)") else {
+        guard let endpointUrl = URL(string: "\(getServerUrl())\(endpoint)?\(urlParameters)") else {
             return nil
         }
         
@@ -68,31 +61,31 @@ extension APIRequest {
         return endpointRequest
     }
     
-//    public static func processResponse (_ response: AFDataResponse<Data>, onSuccess: ((_: [Dog]) -> Void), onError: ((_: APIError?, _: Error) -> Void)) {
-//        print(
-//            """
-//            =============== API response =====================
-//            Response: \(String(describing: response.request))
-//            Response: \(String(data: response.data!, encoding: String.Encoding.utf8)!)
-//            ==================================================
-//            """
-//        )
-//        switch response.result {
-//        case .success:
-//            guard let baseResponse = Mapper<Dog>().mapArray(JSONString: String(data: response.data!, encoding: String.Encoding.utf8)!) else {
-//                return
-//            }
-//            onSuccess(baseResponse)
-//            break
-//        case .failure(let error):
-//            guard let baseErrorResponse = Mapper<APIError>().map(JSONString: String(data: response.data!, encoding: String.Encoding.utf8)!) else {
-//                return
-//            }
-//            onError(baseErrorResponse, error)
-//            break
-//        }
-//        
-//    }
+    public static func processResponse (_ response: AFDataResponse<Any>, onSuccess: ((_: [Dog]) -> Void), onError: ((_: APIError?, _: Error) -> Void)) {
+        print(
+            """
+            =============== API response =====================
+            Response: \(String(describing: response.request))
+            Response: \(String(data: response.data!, encoding: String.Encoding.utf8)!)
+            ==================================================
+            """
+        )
+        switch response.result {
+        case .success:
+            guard let baseResponse = Mapper<Dog>().mapArray(JSONString: String(data: response.data!, encoding: String.Encoding.utf8)!) else {
+                return
+            }
+            onSuccess(baseResponse)
+            break
+        case .failure(let error):
+            guard let baseErrorResponse = Mapper<APIError>().map(JSONString: String(data: response.data!, encoding: String.Encoding.utf8)!) else {
+                return
+            }
+            onError(baseErrorResponse, error)
+            break
+        }
+
+    }
 
     public static func getErrorResponse(_ response: DataResponse<Any,Error>) -> APIError? {
         do {

@@ -21,7 +21,7 @@ class DogListPresenter:DogListViewToPresenterProtocol,DogListInteractorToPresent
     }
     
     func getDogList() {
-    
+        interactor!.getDogList()
     }
 
 }

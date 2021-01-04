@@ -25,7 +25,16 @@ class DogListIntrector: DogListPresenterToInteractorProtocol {
     
 
     func getDogList() {
-    
+        DogLISTAPIRequest.init(limit: 50).dispatch(onSuccess: { (dogs) in
+            
+            if self.presenter  != nil {
+                self.presenter?.didRecieved(dogs: dogs)
+            }
+            
+        }) { (errorResponse, error) in
+            
+        }
+
     }
     
 
